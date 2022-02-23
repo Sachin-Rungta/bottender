@@ -5,12 +5,11 @@ preRun:
         - yarn install
 preMerge:
   pattern:
-    - "./packages/*/src/__tests__/*.spec.ts"
+    - "./packages/*/src/__tests__/*"
 postMerge:
   pattern: 
-    - "./packages/*/src/__tests__/*.spec.ts"
+    - "./packages/*/src/__tests__/*"
 postRun:
      command:
         - yarn --version
-configFile: jest.config.js
 version: 1.0
