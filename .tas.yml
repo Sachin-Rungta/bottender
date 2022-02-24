@@ -2,8 +2,7 @@
 framework: jest
 preRun:
      command:
-        - yarn install
-        - yarn run compile
+        - yarn bootstrap
 preMerge:
   pattern:
     - "./packages/*/src/__tests__/*.spec.ts"
