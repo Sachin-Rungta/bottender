@@ -3,9 +3,10 @@ framework: jest
 preRun:
      command:
         - yarn install
+        - yarn run compile
 preMerge:
   pattern:
-    - "./packages/*/src/__tests__/*.spec.ts*"
+    - "./packages/*/src/__tests__/*.spec.ts"
 postMerge:
   pattern: 
     - "./packages/*/src/__tests__/*.spec.ts"
