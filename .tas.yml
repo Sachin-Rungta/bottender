@@ -4,12 +4,13 @@ preRun:
      command:
         - yarn install
         - yarn bootstrap
+        - yarn testonly
 preMerge:
   pattern:
-    - "./packages/*/src/__tests__/*.spec.ts"
+    - "./packages/**/src/__tests__/*.ts"
 postMerge:
   pattern: 
-    - "./packages/*/src/__tests__/*.spec.ts"
+    - "./packages/**/src/__tests__/*.ts"
 postRun:
      command:
         - yarn --version
