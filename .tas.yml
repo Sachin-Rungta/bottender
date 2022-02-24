@@ -5,10 +5,10 @@ preRun:
         - yarn install
 preMerge:
   pattern:
-    - "./packages/*/src/__tests__/*"
+    - "./packages/*/src/__tests__/*.spec.ts*"
 postMerge:
   pattern: 
-    - "./packages/*/src/__tests__/*"
+    - "./packages/*/src/__tests__/*.spec.ts"
 postRun:
      command:
         - yarn --version
